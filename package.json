@@ -1,0 +1,25 @@
+{
+  "name": "expo-datetimepicker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "watch": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-native": "^0.73.0",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "rollup": "^4.41.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  },
+  "private": false,
+  "dependencies": {
+    "@react-native-community/datetimepicker": "^8.4.1"
+  }
+}
