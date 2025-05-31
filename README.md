@@ -1,10 +1,9 @@
-````md
+```md
 # expo-datetimepicker
 
 A lightweight, customizable DateTimePicker component for React Native and Expo projects, built with TypeScript.  
 Wraps `@react-native-community/datetimepicker` with added convenience and Expo compatibility.
-
----
+```
 
 ## Features
 
@@ -14,15 +13,13 @@ Wraps `@react-native-community/datetimepicker` with added convenience and Expo c
 - Easy to use with React Native & Expo
 - Peer dependencies to keep your bundle size small
 
----
-
 ## Installation
 
 ```bash
 npm install expo-datetimepicker
 # or
 yarn add expo-datetimepicker
-````
+```
 
 Make sure to also install peer dependencies if you don’t have them already:
 
@@ -37,32 +34,32 @@ yarn add react react-native @react-native-community/datetimepicker
 ## Usage
 
 ```tsx
-import React, {useState} from 'react';
-import {View, Button} from 'react-native';
-import DateTimePicker from 'expo-datetimepicker';
+import React, { useState } from "react";
+import { View, Button } from "react-native";
+import DateTimePicker from "expo-datetimepicker";
 
 export default function Example() {
-    const [date, setDate] = useState(new Date());
-    const [show, setShow] = useState(false);
+  const [date, setDate] = useState(new Date());
+  const [show, setShow] = useState(false);
 
-    const onChange = (event: any, selectedDate?: Date) => {
-        setShow(false);
-        if (selectedDate) setDate(selectedDate);
-    };
+  const onChange = (event: any, selectedDate?: Date) => {
+    setShow(false);
+    if (selectedDate) setDate(selectedDate);
+  };
 
-    return (
-        <View style={{padding: 20}}>
-            <Button title="Pick a Date" onPress={() => setShow(true)}/>
-            {show && (
-                <DateTimePicker
-                    value={date}
-                    mode="date"
-                    display="default"
-                    onChange={onChange}
-                />
-            )}
-        </View>
-    );
+  return (
+    <View style={{ padding: 20 }}>
+      <Button title="Pick a Date" onPress={() => setShow(true)} />
+      {show && (
+        <DateTimePicker
+          value={date}
+          mode="date"
+          display="default"
+          onChange={onChange}
+        />
+      )}
+    </View>
+  );
 }
 ```
 
@@ -81,9 +78,9 @@ Refer to [official docs](https://github.com/react-native-datetimepicker/datetime
 
 This package relies on:
 
-* `react` (>=17.0.0)
-* `react-native` (>=0.68.0)
-* `@react-native-community/datetimepicker` (>=8.4.1)
+- `react` (>=17.0.0)
+- `react-native` (>=0.68.0)
+- `@react-native-community/datetimepicker` (>=8.4.1)
 
 Ensure these are installed in your project.
 
@@ -92,7 +89,7 @@ Ensure these are installed in your project.
 ## Development
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Valenciatv001/expo-datetimepicker
 cd expo-datetimepicker
 npm install
 npm run build
@@ -113,4 +110,3 @@ Created by Ezekiel Agwu
 [LinkedIn](https://www.linkedin.com/in/agwuezekiel/)
 
 [Github](https://github.com/valenciatv001)
-
