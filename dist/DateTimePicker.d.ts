@@ -1,5 +1,5 @@
-import React from 'react';
-export type DateTimePickerMode = 'date' | 'time' | 'datetime';
+import React from "react";
+export type DateTimePickerMode = "date" | "time" | "datetime";
 export interface DateTimePickerProps {
     value: Date;
     mode?: DateTimePickerMode;
